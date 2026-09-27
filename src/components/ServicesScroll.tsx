@@ -65,20 +65,28 @@ export default function ServicesScroll() {
     const ctx = gsap.context(() => {
       const panels = panelsRef.current;
       panels.forEach((panel, i) => {
-        if (i === panels.length - 1) return;
-        gsap.to(panel, {
-          yPercent: -100,
-          ease: "none",
-          scrollTrigger: {
-            trigger: panel,
-            start: "top top",
-            endTrigger: containerRef.current,
-            end: "bottom top",
-            scrub: true,
-            pin: true,
-            pinSpacing: false,
-          },
+        const isLast = i === panels.length - 1;
+
+        ScrollTrigger.create({
+          trigger: panel,
+          start: "top top",
+          end: "+=100%",
+          pin: true,
+          pinSpacing: false,
         });
+
+        if (!isLast) {
+          gsap.to(panel, {
+            yPercent: -100,
+            ease: "none",
+            scrollTrigger: {
+              trigger: panel,
+              start: "top top",
+              end: "+=100%",
+              scrub: true,
+            },
+          });
+        }
       });
     }, containerRef);
     return () => ctx.revert();
