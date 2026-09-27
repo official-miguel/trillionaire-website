@@ -15,7 +15,7 @@ export default function Home() {
               <span className="text-lime">actually runs on.</span>
             </h1>
             <p className="mt-8 text-lg text-white/60 max-w-md">
-              Websites, apps, custom systems, and AI — built by the team behind Bidii,
+              Websites, apps, custom systems, and AI, built by the team behind Bidii,
               a school management system running in real schools today.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -49,19 +49,19 @@ export default function Home() {
 
       <TechStrip />
 
-      {/* Services — pinned scroll story */}
+      {/* Services: pinned scroll story */}
       <ServicesScroll />
 
-      {/* Flagship work — Bidii */}
+      {/* Flagship work: Bidii */}
       <section className="bg-ink border-t border-white/10 px-6 py-32">
         <div className="mx-auto max-w-7xl">
           <span className="font-mono text-sm text-lime">Flagship work</span>
           <h2 className="mt-4 text-4xl sm:text-6xl font-semibold tracking-tight max-w-3xl">
-            Bidii — a full school management system, built and running.
+            Bidii is a full school management system, built and running.
           </h2>
           <p className="mt-6 text-white/60 text-lg max-w-2xl">
             Timetabling, assessments, accommodation, and communication for real
-            schools — proof we don&apos;t just design software, we ship systems
+            schools. Proof we don&apos;t just design software, we ship systems
             people depend on every day.
           </p>
           <Link
@@ -97,8 +97,8 @@ export default function Home() {
             <div>
               <h3 className="font-semibold text-lg">One team, every layer</h3>
               <p className="mt-2 text-ink/60">
-                Design, engineering, and AI under one roof — no handoffs between
-                agencies.
+                Design, engineering, and AI under one roof, with no handoffs
+                between agencies.
               </p>
             </div>
             <div>

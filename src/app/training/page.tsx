@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 export const metadata: Metadata = {
   title: "AI Training",
   description:
-    "Practical AI skills for your team, taught by people who ship AI — hands-on training for organisations and individuals.",
+    "Practical AI skills for your team, taught by people who ship AI. Hands-on training for organisations and individuals.",
 };
 
 export default function TrainingPage() {
@@ -22,7 +22,7 @@ export default function TrainingPage() {
         included: [
           {
             title: "Hands-on sessions",
-            description: "Real tools, real workflows — not slide decks about AI.",
+            description: "Real tools, real workflows, not slide decks about AI.",
           },
           {
             title: "For teams or individuals",

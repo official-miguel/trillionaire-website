@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "A Kenyan studio building software worth running on — the team behind Bidii.",
+  description: "A Kenyan studio building software worth running on, from the team behind Bidii.",
 };
 
 export default function AboutPage() {
@@ -17,7 +17,7 @@ export default function AboutPage() {
           </h1>
           <p className="mt-8 text-lg sm:text-xl text-white/60 max-w-2xl">
             Trillionaire Designs is a Nairobi-based team building websites, apps,
-            custom systems, and AI — for businesses that need software to actually
+            custom systems, and AI for businesses that need software to actually
             work, not just look good in a pitch.
           </p>
         </div>
@@ -29,16 +29,16 @@ export default function AboutPage() {
             <h2 className="text-2xl font-semibold">Why we exist</h2>
             <p className="mt-4 text-white/60">
               Too much software gets built and never used. We started Trillionaire
-              Designs to build systems people actually depend on — starting with
+              Designs to build systems people actually depend on, starting with
               Bidii, our own school management system, now running in real schools.
             </p>
           </div>
           <div>
             <h2 className="text-2xl font-semibold">How we work</h2>
             <p className="mt-4 text-white/60">
-              One team across design, engineering, and AI — no handoffs between
-              agencies. We hold client work to the same standard as our own
-              products.
+              One team across design, engineering, and AI, with no handoffs
+              between agencies. We hold client work to the same standard as
+              our own products.
             </p>
           </div>
         </div>

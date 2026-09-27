@@ -29,8 +29,8 @@ export default function Footer() {
             <span className="font-mono text-sm font-semibold text-lime">{"</>"}</span>
           </Link>
           <p className="mt-4 text-white/50 text-sm max-w-xs">
-            A Nairobi-based studio building websites, apps, custom systems, and AI —
-            the same rigor we used to build Bidii.
+            A Nairobi-based studio building websites, apps, custom systems, and AI,
+            with the same rigor we used to build Bidii.
           </p>
         </div>
 

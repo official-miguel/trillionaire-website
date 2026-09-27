@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Work",
-  description: "Software we've built and shipped — real products, in production, used every day.",
+  description: "Software we've built and shipped. Real products, in production, used every day.",
 };
 
 const projects = [
@@ -11,7 +11,7 @@ const projects = [
     title: "Bidii",
     tag: "Systems · App · AI",
     description:
-      "A full school management system — timetabling, assessments, accommodation, communication, and an embedded AI assistant. Running in real schools today.",
+      "A full school management system covering timetabling, assessments, accommodation, and communication, with an embedded AI assistant. Running in real schools today.",
     href: "/work/bidii",
     featured: true,
   },

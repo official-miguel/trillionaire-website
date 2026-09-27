@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 export const metadata: Metadata = {
   title: "Systems Development",
   description:
-    "Custom software built around how your organisation actually runs — the same way we built Bidii.",
+    "Custom software built around how your organisation actually runs, the same way we built Bidii.",
 };
 
 export default function SystemsPage() {
@@ -15,7 +15,7 @@ export default function SystemsPage() {
         eyebrow: "Systems development",
         title: "Custom software for how your organisation actually runs.",
         description:
-          "Not off-the-shelf. Systems built around your real workflows — the same way we built Bidii for schools.",
+          "Not off-the-shelf. Systems built around your real workflows, the same way we built Bidii for schools.",
         ctaLabel: "Start a systems project",
         ctaHref: "/contact",
         heroImage: "/services/systems.png",
@@ -26,7 +26,7 @@ export default function SystemsPage() {
           },
           {
             title: "Role-based access",
-            description: "Every user sees exactly what they need — admins, staff, and end users.",
+            description: "Every user sees exactly what they need, whether admin, staff, or end user.",
           },
           {
             title: "Long-term support",
@@ -35,7 +35,7 @@ export default function SystemsPage() {
         ],
         proof: {
           label: "Flagship system",
-          title: "Bidii — a full school management system.",
+          title: "Bidii is a full school management system.",
           description:
             "Timetabling, assessments, accommodation, and communication, running in real schools today.",
           href: "/work/bidii",

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Tell us what you're building — we reply on WhatsApp, fast.",
+  description: "Tell us what you're building. We reply on WhatsApp, fast.",
 };
 
 const WHATSAPP_NUMBER = "254182319029";

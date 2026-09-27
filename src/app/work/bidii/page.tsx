@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Bidii — Case Study",
+  title: "Bidii Case Study",
   description:
     "How Trillionaire Designs built Bidii, a full school management system running in real schools today.",
 };
@@ -17,11 +17,11 @@ export default function BidiiCaseStudyPage() {
           </Link>
           <span className="mt-8 block font-mono text-sm text-lime">Flagship system</span>
           <h1 className="mt-4 text-5xl sm:text-7xl font-semibold tracking-tight max-w-4xl">
-            Bidii — a school management system built to actually run schools.
+            Bidii is a school management system built to actually run schools.
           </h1>
           <p className="mt-8 text-lg sm:text-xl text-white/60 max-w-2xl">
             Timetabling, assessments, accommodation, communication, and an embedded
-            AI assistant — one system, used daily by admins, teachers, and parents.
+            AI assistant, all in one system used daily by admins, teachers, and parents.
           </p>
         </div>
       </section>
@@ -31,8 +31,8 @@ export default function BidiiCaseStudyPage() {
           <div>
             <span className="font-mono text-sm text-lime">The problem</span>
             <p className="mt-4 text-white/70">
-              Schools were running critical operations — timetabling, grading,
-              boarding, communication — across disconnected spreadsheets and paper.
+              Schools were running critical operations, from timetabling and grading
+              to boarding and communication, across disconnected spreadsheets and paper.
             </p>
           </div>
           <div>
@@ -65,7 +65,7 @@ export default function BidiiCaseStudyPage() {
               { title: "Accommodation", desc: "Dormitory and boarding management for day and boarding schools." },
               { title: "Soma AI", desc: "An embedded AI assistant helping staff and parents get answers fast." },
               { title: "Messaging", desc: "Direct communication between school, staff, and parents." },
-              { title: "Role-based access", desc: "Super admins, principals, staff, teachers, and parents — each with their own view." },
+              { title: "Role-based access", desc: "Super admins, principals, staff, teachers, and parents, each with their own view." },
             ].map((f) => (
               <div key={f.title} className="border-t border-lime pt-4">
                 <h3 className="font-semibold text-lg">{f.title}</h3>

@@ -18,7 +18,7 @@ const services = [
   {
     n: "01",
     title: "Web development",
-    desc: "Fast, modern websites built to convert — not templates.",
+    desc: "Fast, modern websites built to convert, not templates.",
     href: "/web-development",
     accent: "var(--accent-webdev)",
     Graphic: WebDevGraphic,
@@ -34,7 +34,7 @@ const services = [
   {
     n: "03",
     title: "Systems development",
-    desc: "Custom software for how your organisation actually runs — like Bidii.",
+    desc: "Custom software for how your organisation actually runs, like Bidii.",
     href: "/systems",
     accent: "var(--accent-systems)",
     Graphic: SystemsGraphic,

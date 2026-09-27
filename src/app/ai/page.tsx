@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 export const metadata: Metadata = {
   title: "AI Development",
   description:
-    "AI features built into what you already run — assistants, automation, and insight, shipped into real products.",
+    "AI features built into what you already run: assistants, automation, and insight, shipped into real products.",
 };
 
 export default function AiPage() {
@@ -15,7 +15,7 @@ export default function AiPage() {
         eyebrow: "AI",
         title: "AI features built into what you already run.",
         description:
-          "We build practical AI into real products — assistants, automation, and insight, not demos that never ship.",
+          "We build practical AI into real products: assistants, automation, and insight, not demos that never ship.",
         ctaLabel: "Build with AI",
         ctaHref: "/contact",
         heroImage: "/services/ai.png",
@@ -35,7 +35,7 @@ export default function AiPage() {
         ],
         proof: {
           label: "Proof of craft",
-          title: "Soma AI — built into Bidii.",
+          title: "Soma AI, built into Bidii.",
           description:
             "An AI assistant embedded directly into the Bidii school system, helping staff and parents daily.",
           href: "/work/bidii",

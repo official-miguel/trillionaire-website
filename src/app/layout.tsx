@@ -19,13 +19,13 @@ const grandHotel = Grand_Hotel({
 });
 
 const siteDescription =
-  "Trillionaire Designs is a Nairobi-based studio building websites, apps, custom systems, and AI — the same rigor used to build Bidii, a school management system running in real schools today.";
+  "Trillionaire Designs is a Nairobi-based studio building websites, apps, custom systems, and AI, with the same rigor used to build Bidii, a school management system running in real schools today.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://trillionairedesigns.co.ke"),
   title: {
-    default: "Trillionaire Designs — Web, App, Systems & AI Development in Kenya",
-    template: "%s — Trillionaire Designs",
+    default: "Trillionaire Designs: Web, App, Systems & AI Development in Kenya",
+    template: "%s | Trillionaire Designs",
   },
   description: siteDescription,
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Trillionaire Designs" }],
   openGraph: {
-    title: "Trillionaire Designs — Web, App, Systems & AI Development in Kenya",
+    title: "Trillionaire Designs: Web, App, Systems & AI Development in Kenya",
     description: siteDescription,
     url: "https://trillionairedesigns.co.ke",
     siteName: "Trillionaire Designs",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Trillionaire Designs — Web, App, Systems & AI Development in Kenya",
+    title: "Trillionaire Designs: Web, App, Systems & AI Development in Kenya",
     description: siteDescription,
     images: ["/brand/logo-laptop.webp"],
   },

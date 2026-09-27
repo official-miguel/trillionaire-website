@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 export const metadata: Metadata = {
   title: "App Development",
   description:
-    "Mobile and web apps built end to end — backend, store submission, and everything in between.",
+    "Mobile and web apps built end to end: backend, store submission, and everything in between.",
 };
 
 export default function AppDevelopmentPage() {
@@ -15,7 +15,7 @@ export default function AppDevelopmentPage() {
         eyebrow: "App development",
         title: "Mobile and web apps built end to end.",
         description:
-          "From first screen to production release — apps built for real users, on real devices, with real business logic behind them.",
+          "From first screen to production release, we build apps for real users, on real devices, with real business logic behind them.",
         ctaLabel: "Start an app project",
         ctaHref: "/contact",
         heroImage: "/services/app-development.png",
@@ -26,7 +26,7 @@ export default function AppDevelopmentPage() {
           },
           {
             title: "Backend included",
-            description: "APIs, databases, and auth — not just a front-end shell.",
+            description: "APIs, databases, and auth, not just a front-end shell.",
           },
           {
             title: "Store-ready delivery",
@@ -37,7 +37,7 @@ export default function AppDevelopmentPage() {
           label: "Proof of craft",
           title: "Bidii runs as a full mobile and web app.",
           description:
-            "Parents, teachers, and admins all use dedicated app experiences inside Bidii — built and maintained by us.",
+            "Parents, teachers, and admins all use dedicated app experiences inside Bidii, built and maintained by us.",
           href: "/work/bidii",
           linkLabel: "Read the Bidii case study",
         },

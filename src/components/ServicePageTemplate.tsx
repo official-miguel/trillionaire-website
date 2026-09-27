@@ -27,11 +27,11 @@ export default function ServicePageTemplate({ content }: { content: ServicePageC
   return (
     <main data-theme={theme} className="bg-ink text-white">
       {/* Hero */}
-      <section className="min-h-[85vh] flex items-center px-6 pt-28 pb-16">
-        <div className="mx-auto max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <section className="lg:min-h-[85vh] flex items-center px-6 pt-28 pb-16">
+        <div className="mx-auto max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <span className="font-mono text-sm text-accent">{eyebrow}</span>
-            <h1 className="mt-4 text-5xl sm:text-6xl font-semibold tracking-tight leading-[0.95]">
+            <h1 className="mt-4 text-4xl sm:text-6xl font-semibold tracking-tight leading-[0.95]">
               {title}
             </h1>
             <p className="mt-8 text-lg text-white/60 max-w-xl">{description}</p>
@@ -43,7 +43,7 @@ export default function ServicePageTemplate({ content }: { content: ServicePageC
             </Link>
           </div>
 
-          <div className="rounded-2xl overflow-hidden border border-white/10 bg-black/40">
+          <div className="w-3/4 mx-auto lg:w-full lg:mx-0 rounded-2xl overflow-hidden border border-white/10 bg-black/40">
             <Image
               src={heroImage}
               alt={`${title} illustration`}
