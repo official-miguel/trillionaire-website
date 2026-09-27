@@ -2,25 +2,58 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0a0a0a;
+  --lime: #32cd32;
+  --ink: #0a0a0a;
+
+  /* per-service accents */
+  --accent-webdev: #2e6bff;
+  --accent-appdev: #00c2d1;
+  --accent-systems: #7c5cff;
+  --accent-ai: #ff3ea5;
+  --accent-training: #ffb020;
+  --accent: var(--lime);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-lime: var(--lime);
+  --color-ink: var(--ink);
+  --color-accent: var(--accent);
+  --color-accent-webdev: var(--accent-webdev);
+  --color-accent-appdev: var(--accent-appdev);
+  --color-accent-systems: var(--accent-systems);
+  --color-accent-ai: var(--accent-ai);
+  --color-accent-training: var(--accent-training);
+  --font-sans: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+[data-theme="webdev"] { --accent: var(--accent-webdev); }
+[data-theme="appdev"] { --accent: var(--accent-appdev); }
+[data-theme="systems"] { --accent: var(--accent-systems); }
+[data-theme="ai"] { --accent: var(--accent-ai); }
+[data-theme="training"] { --accent: var(--accent-training); }
+
+html {
+  scroll-behavior: auto;
+}
+
+@keyframes tech-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-tech-scroll {
+  animation: tech-scroll 28s linear infinite;
 }
