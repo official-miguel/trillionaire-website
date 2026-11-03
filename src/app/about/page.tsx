@@ -60,12 +60,13 @@ export default function AboutPage() {
           <div className="mx-auto max-w-7xl">
             <span className="font-mono text-sm text-lime">About</span>
             <h1 className="mt-4 text-5xl sm:text-7xl font-semibold tracking-tight max-w-3xl">
-              A Kenyan studio building software worth running on.
+              Kenyan software development company building digital solutions.
             </h1>
             <p className="mt-8 text-lg sm:text-xl text-white/60 max-w-2xl">
-              Trillionaire Designs is a Nairobi-based software development company building
-              websites, apps, custom systems, and AI solutions for businesses that need
-              software to actually work — not just look good in a pitch deck.
+              <strong>Trillionaire Designs</strong> is a technology and software development 
+              company based in Nairobi, Kenya. We specialize in website development, mobile 
+              applications, custom software systems, AI-powered solutions, and digital innovation 
+              for businesses across Kenya and East Africa.
             </p>
           </div>
         </section>
@@ -88,6 +89,56 @@ export default function AboutPage() {
                 agencies. We hold client work to the same standard as our own products,
                 because we know what it takes to ship software that stays in production.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-white/10 px-6 py-24">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-2xl font-semibold mb-8">Company Information</h2>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 text-sm">
+              <div>
+                <h3 className="font-semibold text-lime mb-2">Company Name</h3>
+                <p className="text-white/70">Trillionaire Designs</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lime mb-2">Location</h3>
+                <p className="text-white/70">Nairobi, Kenya</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lime mb-2">Industry</h3>
+                <p className="text-white/70">Software Development &amp; Technology</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lime mb-2">Website</h3>
+                <a href="https://trillionairedesigns.co.ke" className="text-white/70 hover:text-lime transition-colors">
+                  trillionairedesigns.co.ke
+                </a>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lime mb-2">Email</h3>
+                <a href="mailto:trillionairedesigns.ke@gmail.com" className="text-white/70 hover:text-lime transition-colors">
+                  trillionairedesigns.ke@gmail.com
+                </a>
+              </div>
+              <div>
+                <h3 className="font-semibold text-lime mb-2">Phone</h3>
+                <a href="tel:+254182319029" className="text-white/70 hover:text-lime transition-colors">
+                  +254 182 319 029
+                </a>
+              </div>
+            </div>
+            
+            <div className="mt-12 pt-8 border-t border-white/10">
+              <h3 className="font-semibold text-lime mb-4">Core Services</h3>
+              <ul className="grid sm:grid-cols-2 gap-3 text-white/70">
+                <li>• Website Development</li>
+                <li>• Mobile App Development</li>
+                <li>• Custom Software Systems</li>
+                <li>• AI Solutions &amp; Automation</li>
+                <li>• Business Process Automation</li>
+                <li>• Coding &amp; AI Training</li>
+              </ul>
             </div>
           </div>
         </section>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#0a0a0a"/>
+  
+  <!-- Laptop with code brackets -->
+  <g transform="translate(256, 180)">
+    <!-- Laptop screen -->
+    <rect x="-140" y="-80" width="280" height="180" rx="12" fill="none" stroke="#32cd32" stroke-width="6"/>
+    
+    <!-- Code brackets inside screen -->
+    <g transform="translate(0, 20)">
+      <path d="M -70 -10 L -95 15 L -70 40" stroke="#32cd32" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 70 -10 L 95 15 L 70 40" stroke="#32cd32" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="30" y1="-5" x2="-30" y2="35" stroke="#32cd32" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    
+    <!-- Laptop base -->
+    <path d="M -160 100 L -140 100 L -140 93 L 140 93 L 140 100 L 160 100 L 148 120 L -148 120 Z" fill="#32cd32"/>
+  </g>
+  
+  <!-- Company name -->
+  <text x="256" y="370" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="-1">
+    Trillionaire
+  </text>
+  <text x="256" y="415" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="-1">
+    Designs
+  </text>
+  
+  <!-- Tagline -->
+  <text x="256" y="460" font-family="Arial, sans-serif" font-size="20" font-weight="300" fill="#32cd32" text-anchor="middle">
+    SOFTWARE · SYSTEMS · AI
+  </text>
+</svg>

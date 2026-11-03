@@ -27,7 +27,7 @@ const siteDescription =
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Trillionaire Designs — Web, App, Systems & AI Development in Kenya",
+    default: "Trillionaire Designs — Kenyan Software Development Company",
     template: "%s | Trillionaire Designs",
   },
   description: siteDescription,
@@ -70,10 +70,20 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", sizes: "512x512", type: "image/png" },
+      { url: "/brand/logo-square.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
     ],
+    shortcut: [{ url: "/favicon.ico", type: "image/x-icon" }],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    other: [
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "512x512",
+        url: "/brand/logo-square.png",
+      },
+    ],
   },
   appleWebApp: {
     capable: true,
@@ -81,7 +91,7 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
   openGraph: {
-    title: "Trillionaire Designs — Web, App, Systems & AI Development in Kenya",
+    title: "Trillionaire Designs — Kenyan Software Development Company",
     description: siteDescription,
     url: BASE_URL,
     siteName: "Trillionaire Designs",
@@ -92,13 +102,13 @@ export const metadata: Metadata = {
         url: "/brand/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Trillionaire Designs — Software Development in Kenya",
+        alt: "Trillionaire Designs — Kenyan Software Development Company",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Trillionaire Designs — Web, App, Systems & AI Development in Kenya",
+    title: "Trillionaire Designs — Kenyan Software Development Company",
     description: siteDescription,
     images: ["/brand/og-image.svg"],
     creator: "@TrillionaireKE",
@@ -134,11 +144,13 @@ const organizationSchema = {
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/brand/trillionaire-designs-logo.png`,
-        contentUrl: `${BASE_URL}/brand/trillionaire-designs-logo.png`,
-        width: 800,
-        height: 800,
+        "@id": `${BASE_URL}/#logo`,
+        url: `${BASE_URL}/brand/logo-square.png`,
+        contentUrl: `${BASE_URL}/brand/logo-square.png`,
+        width: 512,
+        height: 512,
         caption: "Trillionaire Designs Logo",
+        inLanguage: "en-KE",
       },
       image: {
         "@type": "ImageObject",
@@ -209,7 +221,9 @@ const organizationSchema = {
       brand: {
         "@type": "Brand",
         name: "Trillionaire Designs",
-        logo: `${BASE_URL}/brand/trillionaire-designs-logo.png`,
+        logo: {
+          "@id": `${BASE_URL}/#logo`,
+        },
       },
       sameAs: [
         // Add verified social media profiles here when available
