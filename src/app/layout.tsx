@@ -22,7 +22,7 @@ const grandHotel = Grand_Hotel({
 const BASE_URL = "https://trillionairedesigns.co.ke";
 
 const siteDescription =
-  "Trillionaire Designs is a Nairobi-based software company building websites, mobile apps, custom systems, and AI solutions for businesses in Kenya and beyond.";
+  "Trillionaire Designs is a technology and software development company based in Kenya, specializing in website development, mobile applications, custom software systems, AI-powered solutions, business automation, branding and digital innovation. We help businesses transform ideas into practical digital solutions.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -31,30 +31,54 @@ export const metadata: Metadata = {
     template: "%s | Trillionaire Designs",
   },
   description: siteDescription,
+  applicationName: "Trillionaire Designs",
   keywords: [
     "Trillionaire Designs",
+    "Trillionaire Designs Kenya",
     "software development Kenya",
     "web development Kenya",
     "website development Nairobi",
+    "website development company Kenya",
     "app development Kenya",
     "mobile app development Kenya",
     "custom software Kenya",
     "system development Kenya",
+    "software systems Kenya",
     "AI solutions Kenya",
     "AI development Kenya",
+    "AI development company Kenya",
     "AI automation Kenya",
+    "AI automation services Kenya",
+    "web application development Kenya",
+    "custom software development Kenya",
     "coding training Kenya",
     "programming training Nairobi",
     "Bidii school management system",
     "software company Nairobi",
+    "software development company Kenya",
     "digital solutions Kenya",
+    "technology company Kenya",
   ],
   authors: [{ name: "Trillionaire Designs", url: BASE_URL }],
   creator: "Trillionaire Designs",
   publisher: "Trillionaire Designs",
   category: "technology",
+  classification: "Software Development",
   alternates: {
     canonical: BASE_URL,
+  },
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
+  appleWebApp: {
+    capable: true,
+    title: "Trillionaire Designs",
+    statusBarStyle: "black-translucent",
   },
   openGraph: {
     title: "Trillionaire Designs — Web, App, Systems & AI Development in Kenya",
@@ -65,9 +89,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/brand/logo-laptop.webp",
-        width: 1680,
-        height: 945,
+        url: "/brand/og-image.svg",
+        width: 1200,
+        height: 630,
         alt: "Trillionaire Designs — Software Development in Kenya",
       },
     ],
@@ -76,7 +100,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Trillionaire Designs — Web, App, Systems & AI Development in Kenya",
     description: siteDescription,
-    images: ["/brand/logo-laptop.webp"],
+    images: ["/brand/og-image.svg"],
+    creator: "@TrillionaireKE",
+    site: "@TrillionaireKE",
   },
   robots: {
     index: true,
@@ -89,6 +115,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    // Add Google Search Console verification code here when available
+    // google: 'your-verification-code',
+  },
 };
 
 // JSON-LD: Organization + WebSite structured data
@@ -99,17 +129,38 @@ const organizationSchema = {
       "@type": "Organization",
       "@id": `${BASE_URL}/#organization`,
       name: "Trillionaire Designs",
+      alternateName: "Trillionaire Designs Kenya",
+      legalName: "Trillionaire Designs",
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${BASE_URL}/brand/logo-laptop.webp`,
-        width: 1680,
-        height: 945,
+        url: `${BASE_URL}/brand/trillionaire-designs-logo.png`,
+        contentUrl: `${BASE_URL}/brand/trillionaire-designs-logo.png`,
+        width: 800,
+        height: 800,
+        caption: "Trillionaire Designs Logo",
+      },
+      image: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/brand/og-image.svg`,
+        width: 1200,
+        height: 630,
       },
       description: siteDescription,
+      slogan: "Design. Develop. Innovate.",
+      foundingDate: "2023",
+      foundingLocation: {
+        "@type": "Place",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Nairobi",
+          addressCountry: "KE",
+        },
+      },
       address: {
         "@type": "PostalAddress",
         addressLocality: "Nairobi",
+        addressRegion: "Nairobi County",
         addressCountry: "KE",
       },
       contactPoint: [
@@ -117,20 +168,29 @@ const organizationSchema = {
           "@type": "ContactPoint",
           contactType: "customer support",
           email: "trillionairedesigns.ke@gmail.com",
-          availableLanguage: ["English"],
+          availableLanguage: ["English", "Swahili"],
         },
         {
           "@type": "ContactPoint",
           contactType: "sales",
           telephone: "+254182319029",
           contactOption: "TollFree",
-          availableLanguage: ["English"],
+          availableLanguage: ["English", "Swahili"],
         },
       ],
       areaServed: [
         { "@type": "Country", name: "Kenya" },
-        { "@type": "AdministrativeArea", name: "Nairobi" },
+        { "@type": "Country", name: "East Africa" },
       ],
+      serviceArea: {
+        "@type": "GeoCircle",
+        geoMidpoint: {
+          "@type": "GeoCoordinates",
+          latitude: -1.286389,
+          longitude: 36.817223,
+        },
+        geoRadius: "5000000",
+      },
       knowsAbout: [
         "Web Development",
         "Mobile App Development",
@@ -142,8 +202,18 @@ const organizationSchema = {
         "Coding Training",
         "Programming Education",
         "Digital Solutions",
+        "Business Process Automation",
+        "Software Consulting",
       ],
-      sameAs: [],
+      knowsLanguage: ["en-KE", "sw-KE"],
+      brand: {
+        "@type": "Brand",
+        name: "Trillionaire Designs",
+        logo: `${BASE_URL}/brand/trillionaire-designs-logo.png`,
+      },
+      sameAs: [
+        // Add verified social media profiles here when available
+      ],
     },
     {
       "@type": "WebSite",
