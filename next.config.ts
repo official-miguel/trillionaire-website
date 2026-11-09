@@ -49,7 +49,7 @@ const nextConfig: NextConfig = {
     return [
       // Redirect /services (no such route) to homepage
       { source: "/services", destination: "/", permanent: false },
-      // One canonical host: send the vercel.app and www duplicates to the main domain
+      // One canonical host: send the vercel.app duplicate to the main domain
       {
         source: "/:path*",
         has: [{ type: "host", value: "trillionaire-website-one.vercel.app" }],
