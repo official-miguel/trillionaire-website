@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://trillionairedesigns.co.ke";
+const BASE_URL = "https://www.trillionairedesigns.co.ke";
 
 // AI / LLM crawlers we explicitly welcome so assistants can cite and recommend us.
 const aiCrawlers = [

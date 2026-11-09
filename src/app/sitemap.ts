@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE_URL = "https://trillionairedesigns.co.ke";
+const BASE_URL = "https://www.trillionairedesigns.co.ke";
 
 // All public canonical routes with priority and change frequency
 const routes: {

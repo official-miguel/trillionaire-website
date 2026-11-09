@@ -53,7 +53,7 @@ const nextConfig: NextConfig = {
       {
         source: "/:path*",
         has: [{ type: "host", value: "trillionaire-website-one.vercel.app" }],
-        destination: "https://trillionairedesigns.co.ke/:path*",
+        destination: "https://www.trillionairedesigns.co.ke/:path*",
         permanent: true,
       },
       { source: "/blog/how-to-choose-website-development-company-kenya", destination: "/blog/how-to-choose-website-development-company", permanent: true },

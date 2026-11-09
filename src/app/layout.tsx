@@ -19,7 +19,7 @@ const grandHotel = Grand_Hotel({
   weight: "400",
 });
 
-const BASE_URL = "https://trillionairedesigns.co.ke";
+const BASE_URL = "https://www.trillionairedesigns.co.ke";
 
 const siteDescription =
   "Trillionaire Designs is a software company building websites, mobile apps, custom systems, and AI solutions for businesses of any size.";

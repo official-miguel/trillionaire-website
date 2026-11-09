@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 
-const BASE_URL = "https://trillionairedesigns.co.ke";
+const BASE_URL = "https://www.trillionairedesigns.co.ke";
 const PAGE_URL = `${BASE_URL}/training`;
 
 export const metadata: Metadata = {

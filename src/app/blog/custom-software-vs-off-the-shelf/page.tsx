@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const BASE_URL = "https://trillionairedesigns.co.ke";
+const BASE_URL = "https://www.trillionairedesigns.co.ke";
 const SLUG = "custom-software-vs-off-the-shelf";
 const PAGE_URL = `${BASE_URL}/blog/${SLUG}`;
 

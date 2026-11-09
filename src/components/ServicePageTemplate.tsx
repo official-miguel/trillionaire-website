@@ -25,7 +25,7 @@ export type ServicePageContent = {
   breadcrumbs?: { name: string; href: string }[];
 };
 
-const BASE_URL = "https://trillionairedesigns.co.ke";
+const BASE_URL = "https://www.trillionairedesigns.co.ke";
 
 export default function ServicePageTemplate({ content }: { content: ServicePageContent }) {
   const { theme, eyebrow, title, description, ctaLabel, heroImage, included, proof, jsonLd, breadcrumbs } = content;

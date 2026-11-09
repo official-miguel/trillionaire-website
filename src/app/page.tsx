@@ -4,7 +4,7 @@ import Link from "next/link";
 import ServicesScroll from "@/components/ServicesScroll";
 import TechStrip from "@/components/TechStrip";
 
-const BASE_URL = "https://trillionairedesigns.co.ke";
+const BASE_URL = "https://www.trillionairedesigns.co.ke";
 
 export const metadata: Metadata = {
   title: "Trillionaire Designs — Web, App, Systems & AI Development",
