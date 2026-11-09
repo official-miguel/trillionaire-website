@@ -2,29 +2,29 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const BASE_URL = "https://trillionairedesigns.co.ke";
-const SLUG = "how-to-choose-website-development-company-kenya";
+const SLUG = "how-to-choose-website-development-company";
 const PAGE_URL = `${BASE_URL}/blog/${SLUG}`;
 
 export const metadata: Metadata = {
-  title: "How to Choose a Website Development Company in Kenya",
+  title: "How to Choose a Website Development Company",
   description:
-    "What to look for, what to avoid, and the right questions to ask before hiring a web development company in Kenya. A practical guide from a Nairobi-based development team.",
+    "What to look for, what to avoid, and the right questions to ask before hiring a web development company. A practical guide from a development team.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "How to Choose a Website Development Company in Kenya | Trillionaire Designs",
+    title: "How to Choose a Website Development Company | Trillionaire Designs",
     description:
-      "A practical guide to picking the right web development partner in Kenya — what matters, what doesn't, and what questions to ask.",
+      "A practical guide to picking the right web development partner — what matters, what doesn't, and what questions to ask.",
     url: PAGE_URL,
     type: "article",
   },
   keywords: [
-    "website development company Kenya",
-    "how to choose web developer Kenya",
-    "web design company Nairobi",
-    "best web development company Kenya",
-    "hiring web developer Kenya",
+    "website development company",
+    "how to choose web developer",
+    "web design company",
+    "best web development company",
+    "hiring web developer",
   ],
 };
 
@@ -32,9 +32,9 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "@id": `${PAGE_URL}/#article`,
-  headline: "How to Choose a Website Development Company in Kenya",
+  headline: "How to Choose a Website Development Company",
   description:
-    "What to look for, what to avoid, and the right questions to ask before hiring a web development company in Kenya.",
+    "What to look for, what to avoid, and the right questions to ask before hiring a web development company.",
   url: PAGE_URL,
   datePublished: "2024-11-01",
   dateModified: "2024-11-01",
@@ -44,17 +44,17 @@ const articleSchema = {
     name: "Trillionaire Designs",
   },
   publisher: { "@id": `${BASE_URL}/#organization` },
-  inLanguage: "en-KE",
+  inLanguage: "en",
   about: [
     { "@type": "Thing", name: "Web Development" },
-    { "@type": "Thing", name: "Website Design Kenya" },
+    { "@type": "Thing", name: "Website Design" },
   ],
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home",  item: BASE_URL               },
       { "@type": "ListItem", position: 2, name: "Blog",  item: `${BASE_URL}/blog`     },
-      { "@type": "ListItem", position: 3, name: "How to Choose a Website Development Company in Kenya", item: PAGE_URL },
+      { "@type": "ListItem", position: 3, name: "How to Choose a Website Development Company", item: PAGE_URL },
     ],
   },
 };
@@ -80,7 +80,7 @@ export default function ArticlePage() {
 
             <span className="font-mono text-sm text-lime">Web Development</span>
             <h1 className="mt-4 text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
-              How to Choose a Website Development Company in Kenya
+              How to Choose a Website Development Company
             </h1>
             <div className="mt-6 flex items-center gap-4 text-sm text-white/40">
               <time dateTime="2024-11-01">1 November 2024</time>
@@ -90,14 +90,14 @@ export default function ArticlePage() {
               <span>Trillionaire Designs</span>
             </div>
             <p className="mt-8 text-lg text-white/70 leading-relaxed">
-              Choosing a web development company in Kenya is harder than it looks. There
+              Choosing a web development company is harder than it looks. There
               are hundreds of agencies, freelancers, and studios offering similar-sounding
               services — and without the right questions, it&apos;s easy to end up with a
               website that looks fine in a demo but breaks in production.
             </p>
             <p className="mt-4 text-white/60 leading-relaxed">
               This guide covers the things that actually matter when evaluating a web
-              development partner in Kenya — whether you need a simple marketing site, an
+              development partner — whether you need a simple marketing site, an
               e-commerce store, or a full web application.
             </p>
 
@@ -115,7 +115,7 @@ export default function ArticlePage() {
 
             <h2 className="mt-12 text-2xl font-semibold">2. Understand what you&apos;re buying</h2>
             <p className="mt-4 text-white/60 leading-relaxed">
-              Website development in Kenya covers a wide range: some companies use
+              Website development covers a wide range: some companies use
               WordPress templates, others build on page builders, and others write custom
               code from scratch. All of these can be appropriate depending on your needs —
               but you should know which you&apos;re getting and why.
@@ -129,7 +129,7 @@ export default function ArticlePage() {
             <h2 className="mt-12 text-2xl font-semibold">3. Ask about performance and SEO</h2>
             <p className="mt-4 text-white/60 leading-relaxed">
               A website that looks great but loads slowly will hurt your business. Google
-              uses page speed as a ranking factor, and most Kenyan users are on mobile
+              uses page speed as a ranking factor, and most users are on mobile
               connections. Ask whether the site will score well on Google&apos;s Core Web
               Vitals — and ask the developer to explain what those are.
             </p>
@@ -148,9 +148,9 @@ export default function ArticlePage() {
 
             <h2 className="mt-12 text-2xl font-semibold">5. Check that they understand your business context</h2>
             <p className="mt-4 text-white/60 leading-relaxed">
-              A web development company that&apos;s built sites for Kenyan businesses
-              understands local context: M-Pesa integration, local SEO for Nairobi
-              searches, mobile-first design for Kenyan users, and realistic timelines.
+              A web development company that&apos;s built sites for businesses
+              understands your context: payment integrations, local SEO for your
+              market, mobile-first design for your users, and realistic timelines.
               Ask whether they&apos;ve built for businesses similar to yours.
             </p>
 
@@ -167,7 +167,7 @@ export default function ArticlePage() {
 
             <div className="mt-16 border-t border-white/10 pt-10">
               <p className="text-white/50 text-sm">
-                Trillionaire Designs builds custom websites for businesses in Kenya.
+                Trillionaire Designs builds custom websites for businesses.
                 We&apos;re happy to answer any of these questions about our own work.
               </p>
               <Link
@@ -187,7 +187,7 @@ export default function ArticlePage() {
                 <Link href="/work/bidii" className="text-sm text-lime hover:text-white transition-colors">
                   See Our Work — Bidii →
                 </Link>
-                <Link href="/blog/custom-software-vs-off-the-shelf-kenya" className="text-sm text-lime hover:text-white transition-colors">
+                <Link href="/blog/custom-software-vs-off-the-shelf" className="text-sm text-lime hover:text-white transition-colors">
                   Custom vs Off-the-Shelf Software →
                 </Link>
               </div>

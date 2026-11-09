@@ -6,16 +6,16 @@ const PAGE_URL = `${BASE_URL}/contact`;
 const WHATSAPP_NUMBER = "254182319029";
 
 export const metadata: Metadata = {
-  title: "Contact Trillionaire Designs — Start a Software Project in Kenya",
+  title: "Contact Trillionaire Designs — Start a Software Project",
   description:
-    "Contact Trillionaire Designs to start a website, app, software system, or AI project in Kenya. Reach us on WhatsApp or email. Based in Nairobi — we reply fast.",
+    "Contact Trillionaire Designs to start a website, app, software system, or AI project. Reach us on WhatsApp or email. Based — we reply fast.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
     title: "Contact Trillionaire Designs | Start a Project",
     description:
-      "Ready to build something? Contact our Nairobi-based software team on WhatsApp or email. We reply quickly.",
+      "Ready to build something? Contact our software team on WhatsApp or email. We reply quickly.",
     url: PAGE_URL,
     type: "website",
   },
@@ -28,7 +28,7 @@ const contactSchema = {
   url: PAGE_URL,
   name: "Contact Trillionaire Designs",
   description:
-    "Contact Trillionaire Designs to discuss a software, website, app, or AI project. Based in Nairobi, Kenya.",
+    "Contact Trillionaire Designs to discuss a software, website, app, or AI project. ",
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
@@ -86,7 +86,6 @@ export default function ContactPage() {
           <div className="mt-16 border-t border-white/10 pt-10 grid sm:grid-cols-3 gap-8 text-left text-sm text-white/50">
             <div>
               <span className="block text-lime font-mono text-xs mb-2 uppercase tracking-widest">Location</span>
-              <span>Nairobi, Kenya</span>
             </div>
             <div>
               <span className="block text-lime font-mono text-xs mb-2 uppercase tracking-widest">Phone / WhatsApp</span>

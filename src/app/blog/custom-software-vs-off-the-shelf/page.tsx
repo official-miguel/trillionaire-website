@@ -2,30 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const BASE_URL = "https://trillionairedesigns.co.ke";
-const SLUG = "custom-software-vs-off-the-shelf-kenya";
+const SLUG = "custom-software-vs-off-the-shelf";
 const PAGE_URL = `${BASE_URL}/blog/${SLUG}`;
 
 export const metadata: Metadata = {
-  title: "Custom Software vs Off-the-Shelf: What Makes Sense for Kenyan Businesses?",
+  title: "Custom Software vs Off-the-Shelf: What Makes Sense for Your Business?",
   description:
-    "A practical comparison of building custom software versus buying ready-made solutions for businesses in Kenya — costs, trade-offs, and how to decide which is right for your situation.",
+    "A practical comparison of building custom software versus buying ready-made solutions for businesses — costs, trade-offs, and how to decide which is right for your situation.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Custom Software vs Off-the-Shelf for Kenyan Businesses | Trillionaire Designs",
+    title: "Custom Software vs Off-the-Shelf for Businesses | Trillionaire Designs",
     description:
-      "When does custom software make sense for a Kenyan business? When is off-the-shelf better? A practical, honest comparison.",
+      "When does custom software make sense for a business? When is off-the-shelf better? A practical, honest comparison.",
     url: PAGE_URL,
     type: "article",
   },
   keywords: [
-    "custom software development Kenya",
-    "off-the-shelf software Kenya",
-    "bespoke software Kenya",
-    "business software Kenya",
-    "SaaS vs custom software Kenya",
-    "software development company Kenya",
+    "custom software development",
+    "off-the-shelf software",
+    "bespoke software",
+    "business software",
+    "SaaS vs custom software",
+    "software development company",
   ],
 };
 
@@ -33,9 +33,9 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "@id": `${PAGE_URL}/#article`,
-  headline: "Custom Software vs Off-the-Shelf: What Makes Sense for Kenyan Businesses?",
+  headline: "Custom Software vs Off-the-Shelf: What Makes Sense for Your Business?",
   description:
-    "A practical comparison of building custom software versus buying ready-made solutions for businesses in Kenya — costs, trade-offs, and how to decide.",
+    "A practical comparison of building custom software versus buying ready-made solutions for businesses — costs, trade-offs, and how to decide.",
   url: PAGE_URL,
   datePublished: "2024-12-01",
   dateModified: "2024-12-01",
@@ -45,10 +45,10 @@ const articleSchema = {
     name: "Trillionaire Designs",
   },
   publisher: { "@id": `${BASE_URL}/#organization` },
-  inLanguage: "en-KE",
+  inLanguage: "en",
   about: [
     { "@type": "Thing", name: "Custom Software Development" },
-    { "@type": "Thing", name: "Business Software Kenya" },
+    { "@type": "Thing", name: "Business Software" },
   ],
   breadcrumb: {
     "@type": "BreadcrumbList",
@@ -81,7 +81,7 @@ export default function ArticlePage() {
 
             <span className="font-mono text-sm text-lime">Software Development</span>
             <h1 className="mt-4 text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
-              Custom Software vs Off-the-Shelf: What Makes Sense for Kenyan Businesses?
+              Custom Software vs Off-the-Shelf: What Makes Sense for Your Business?
             </h1>
             <div className="mt-6 flex items-center gap-4 text-sm text-white/40">
               <time dateTime="2024-12-01">1 December 2024</time>
@@ -91,7 +91,7 @@ export default function ArticlePage() {
               <span>Trillionaire Designs</span>
             </div>
             <p className="mt-8 text-lg text-white/70 leading-relaxed">
-              One of the most common questions we hear from Kenyan businesses is
+              One of the most common questions we hear from businesses is
               whether they should buy existing software or build something custom. The
               honest answer is: it depends — and the right answer isn&apos;t always
               &quot;build custom.&quot;
@@ -131,26 +131,26 @@ export default function ArticlePage() {
             </p>
             <p className="mt-4 text-white/60 leading-relaxed">
               Bidii is a good example. There are school management systems available as
-              off-the-shelf products — but none of them were built for Kenya&apos;s CBC
-              curriculum, Kenyan school structures, and the specific way Kenyan schools
+              off-the-shelf products — but none of them were built around a specific
+              curriculum, school structures, and the specific way schools
               manage boarding. Building Bidii from scratch meant it could handle
-              everything a Kenyan school actually needs.
+              everything a school actually needs.
             </p>
 
             <h2 className="mt-12 text-2xl font-semibold">When custom software makes sense</h2>
             <ul className="mt-4 text-white/60 leading-relaxed space-y-3 list-disc list-inside">
               <li>Your workflow is genuinely different from what generic software handles.</li>
-              <li>You need integration with local systems — M-Pesa, local banks, government databases.</li>
-              <li>Off-the-shelf options don&apos;t exist for your category, or the existing ones don&apos;t fit the Kenyan context.</li>
+              <li>You need integration with local systems — mobile money, local banks, government databases.</li>
+              <li>Off-the-shelf options don&apos;t exist for your category, or the existing ones don&apos;t fit the local context.</li>
               <li>You want to own the software and avoid ongoing subscription costs at scale.</li>
               <li>The software is a core competitive advantage for your business.</li>
-              <li>You need specific compliance or data residency requirements (keeping data in Kenya).</li>
+              <li>You need specific compliance or data residency requirements (keeping data).</li>
             </ul>
 
             <h2 className="mt-12 text-2xl font-semibold">The cost question — honestly</h2>
             <p className="mt-4 text-white/60 leading-relaxed">
               Custom software has a higher upfront cost than most off-the-shelf products.
-              A well-built custom system for a Kenyan business typically involves several
+              A well-built custom system for a business typically involves several
               months of development, and that has a real price.
             </p>
             <p className="mt-4 text-white/60 leading-relaxed">
@@ -180,7 +180,7 @@ export default function ArticlePage() {
             <div className="mt-16 border-t border-white/10 pt-10">
               <p className="text-white/50 text-sm">
                 Trillionaire Designs builds custom software and systems for businesses
-                and organisations in Kenya. We&apos;re honest about when custom is and
+                and organisations. We&apos;re honest about when custom is and
                 isn&apos;t the right choice for your situation.
               </p>
               <Link
@@ -200,7 +200,7 @@ export default function ArticlePage() {
                 <Link href="/work/bidii" className="text-sm text-lime hover:text-white transition-colors">
                   Bidii Case Study →
                 </Link>
-                <Link href="/blog/how-to-choose-website-development-company-kenya" className="text-sm text-lime hover:text-white transition-colors">
+                <Link href="/blog/how-to-choose-website-development-company" className="text-sm text-lime hover:text-white transition-colors">
                   Choosing a Web Development Company →
                 </Link>
               </div>

@@ -49,6 +49,9 @@ const nextConfig: NextConfig = {
     return [
       // Redirect /services (no such route) to homepage
       { source: "/services", destination: "/", permanent: false },
+      { source: "/blog/how-to-choose-website-development-company-kenya", destination: "/blog/how-to-choose-website-development-company", permanent: true },
+      { source: "/blog/ai-automation-small-businesses-kenya", destination: "/blog/ai-automation-small-businesses", permanent: true },
+      { source: "/blog/custom-software-vs-off-the-shelf-kenya", destination: "/blog/custom-software-vs-off-the-shelf", permanent: true },
     ];
   },
 

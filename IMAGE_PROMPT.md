@@ -1,6 +1,6 @@
 # Image generation brief — Trillionaire Designs service pages
 
-Generate one hero image per service page for a premium Kenyan software studio's
+Generate one hero image per service page for a premium software studio's
 website. These images must NOT look like generic AI-generated stock art —
 no glossy 3D robots, no generic "digital brain" clichés, no purple-blue gradient
 tech backgrounds, no stock-photo business people. The site's whole identity is

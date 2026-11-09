@@ -5,30 +5,30 @@ const BASE_URL = "https://trillionairedesigns.co.ke";
 const PAGE_URL = `${BASE_URL}/ai`;
 
 export const metadata: Metadata = {
-  title: "AI Solutions & Development in Kenya — AI Automation, Chatbots & AI Agents",
+  title: "AI Solutions & Development — AI Automation, Chatbots & AI Agents",
   description:
-    "AI solutions company in Kenya. Trillionaire Designs builds AI features, chatbots, AI agents, and automation tools for businesses in Nairobi and across Kenya. Practical AI — not demos.",
+    "AI solutions company. Trillionaire Designs builds AI features, chatbots, AI agents, and automation tools for businesses of any size. Practical AI — not demos.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "AI Solutions & Development in Kenya | Trillionaire Designs",
+    title: "AI Solutions & Development | Trillionaire Designs",
     description:
-      "Practical AI features, chatbots, and automation built into real products. Nairobi-based AI development team with proven AI systems in production.",
+      "Practical AI features, chatbots, and automation built into real products. AI development team with proven AI systems in production.",
     url: PAGE_URL,
     type: "website",
   },
   keywords: [
-    "AI solutions Kenya",
-    "AI development company Kenya",
-    "AI automation Kenya",
-    "AI chatbot development Kenya",
-    "AI agents Kenya",
-    "business AI solutions Nairobi",
-    "AI integration services Kenya",
-    "custom AI applications Kenya",
-    "machine learning Kenya",
-    "business process automation Kenya",
+    "AI solutions",
+    "AI development company",
+    "AI automation",
+    "AI chatbot development",
+    "AI agents",
+    "business AI solutions",
+    "AI integration services",
+    "custom AI applications",
+    "machine learning",
+    "business process automation",
   ],
 };
 
@@ -37,20 +37,16 @@ const serviceSchema = {
   "@type": "Service",
   "@id": `${PAGE_URL}/#service`,
   name: "AI Solutions and Development",
-  alternateName: "AI Development Kenya",
+  alternateName: "AI Development",
   description:
-    "AI development services in Kenya. We build AI assistants, chatbots, automation workflows, and AI agents that integrate into existing business systems. Proven with Soma AI, embedded in the Bidii school management system.",
+    "AI development services. We build AI assistants, chatbots, automation workflows, and AI agents that integrate into existing business systems. Proven with Soma AI, embedded in the Bidii school management system.",
   provider: {
     "@type": "Organization",
     "@id": `${BASE_URL}/#organization`,
     name: "Trillionaire Designs",
   },
   serviceType: "Artificial Intelligence Development",
-  areaServed: [
-    { "@type": "Country", name: "Kenya" },
-    { "@type": "AdministrativeArea", name: "Nairobi" },
-  ],
-  url: PAGE_URL,
+    url: PAGE_URL,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "AI Development Services",
@@ -72,7 +68,7 @@ export default function AiPage() {
         eyebrow: "AI solutions",
         title: "AI features built into what you already run.",
         description:
-          "We build practical AI into real products: assistants, chatbots, automation, and smart insights for Kenyan businesses. Not demos that never ship — production AI that people use every day.",
+          "We build practical AI into real products: assistants, chatbots, automation, and smart insights for growing businesses. Not demos that never ship — production AI that people use every day.",
         ctaLabel: "Build with AI",
         ctaHref: "/contact",
         heroImage: "/services/ai.png",

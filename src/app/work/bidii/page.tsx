@@ -7,24 +7,24 @@ const PAGE_URL = `${BASE_URL}/work/bidii`;
 export const metadata: Metadata = {
   title: "Bidii School Management System — Case Study by Trillionaire Designs",
   description:
-    "How Trillionaire Designs built Bidii — a full school management system with timetabling, CBE assessments, accommodation, AI assistant, and role-based access, running in real Kenyan schools today.",
+    "How Trillionaire Designs built Bidii — a full school management system with timetabling, competency-based assessments, accommodation, AI assistant, and role-based access, running in real schools today.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
     title: "Bidii School Management System Case Study | Trillionaire Designs",
     description:
-      "Bidii is a full school management system built by Trillionaire Designs — covering timetabling, assessments, accommodation, and an embedded AI assistant. In production in Kenya.",
+      "Bidii is a full school management system built by Trillionaire Designs — covering timetabling, assessments, accommodation, and an embedded AI assistant. In production.",
     url: PAGE_URL,
     type: "article",
   },
   keywords: [
     "Bidii school management system",
-    "school management system Kenya",
+    "school management system",
     "Soma AI school assistant",
-    "CBE assessment system Kenya",
-    "timetabling software Kenya",
-    "school software Kenya",
+    "competency-based assessment system",
+    "timetabling software",
+    "school software",
     "Trillionaire Designs case study",
   ],
 };
@@ -37,32 +37,32 @@ const caseStudySchema = {
       "@id": `${PAGE_URL}/#software`,
       name: "Bidii",
       description:
-        "Bidii is a full school management system covering timetabling, CBE assessments, boarding accommodation, staff and parent communication, and an embedded AI assistant (Soma AI). Running in production in Kenyan schools.",
+        "Bidii is a full school management system covering timetabling, competency-based assessments, boarding accommodation, staff and parent communication, and an embedded AI assistant (Soma AI). Running in production in schools.",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web, iOS, Android",
       offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
       creator: { "@id": `${BASE_URL}/#organization` },
       featureList: [
         "Automated timetable generation",
-        "CBE assessments and grading",
+        "Competency-based assessments and grading",
         "Boarding accommodation management",
         "Parent and staff communication",
         "Embedded AI assistant (Soma AI)",
         "Role-based access control",
       ],
-      keywords: "school management system, timetabling, CBE assessment, Kenya, AI assistant",
+      keywords: "school management system, timetabling, competency-based assessment, AI assistant",
     },
     {
       "@type": "Article",
       "@id": `${PAGE_URL}/#article`,
       headline: "Bidii is a school management system built to actually run schools.",
       description:
-        "How Trillionaire Designs built Bidii — a full school management system with timetabling, CBE assessments, boarding management, and Soma AI, now running in real schools in Kenya.",
+        "How Trillionaire Designs built Bidii — a full school management system with timetabling, competency-based assessments, boarding management, and Soma AI, now running in real schools.",
       url: PAGE_URL,
       author: { "@id": `${BASE_URL}/#organization` },
       publisher: { "@id": `${BASE_URL}/#organization` },
       about: { "@id": `${PAGE_URL}/#software` },
-      inLanguage: "en-KE",
+      inLanguage: "en",
     },
     {
       "@type": "BreadcrumbList",
@@ -101,7 +101,7 @@ export default function BidiiCaseStudyPage() {
             <p className="mt-8 text-lg sm:text-xl text-white/60 max-w-2xl">
               Timetabling, assessments, accommodation, communication, and an embedded
               AI assistant — all in one system used daily by admins, teachers, and parents
-              in Kenya.
+             .
             </p>
           </div>
         </section>
@@ -119,7 +119,7 @@ export default function BidiiCaseStudyPage() {
             <div>
               <span className="font-mono text-sm text-lime">The build</span>
               <p className="mt-4 text-white/70">
-                A single integrated system covering timetable generation, CBE assessments,
+                A single integrated system covering timetable generation, competency-based assessments,
                 accommodation management, and a built-in AI assistant — Soma AI — for
                 staff and parents.
               </p>
@@ -127,7 +127,7 @@ export default function BidiiCaseStudyPage() {
             <div>
               <span className="font-mono text-sm text-lime">The result</span>
               <p className="mt-4 text-white/70">
-                A production system running in real Kenyan schools today, with role-based
+                A production system running in real schools today, with role-based
                 access for super admins, principals, staff, teachers, and parents.
               </p>
             </div>
@@ -142,7 +142,7 @@ export default function BidiiCaseStudyPage() {
             <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
               {[
                 { title: "Timetabling",        desc: "Automated, constraint-based timetable generation for every class."                         },
-                { title: "CBE assessments",    desc: "Competency-based grading with its own marks and bands — built for Kenya's CBC curriculum." },
+                { title: "Assessments",        desc: "Competency-based grading with its own marks and bands, configurable to your curriculum." },
                 { title: "Accommodation",      desc: "Dormitory and boarding management for day and boarding schools."                           },
                 { title: "Soma AI",            desc: "An embedded AI assistant helping staff and parents get answers fast, inside the system."   },
                 { title: "Messaging",          desc: "Direct communication between school, staff, and parents — no third-party app required."    },
@@ -180,11 +180,11 @@ export default function BidiiCaseStudyPage() {
             <div>
               <span className="font-mono text-sm text-lime">School management</span>
               <h2 className="mt-4 text-3xl sm:text-4xl font-semibold tracking-tight">
-                Built for Kenya&apos;s curriculum — CBC from the ground up.
+                Built around your curriculum, from the ground up.
               </h2>
               <p className="mt-6 text-white/60">
-                Bidii&apos;s assessment module is built specifically for Kenya&apos;s
-                Competency-Based Curriculum (CBC), handling the grading bands, strands,
+                Bidii&apos;s assessment module is built for competency-based
+                curricula, handling the grading bands, strands,
                 and reporting formats that generic software doesn&apos;t support.
               </p>
               <Link
@@ -203,7 +203,7 @@ export default function BidiiCaseStudyPage() {
               Want a system built like this for your organisation?
             </h2>
             <p className="mt-6 text-white/60 max-w-xl mx-auto">
-              We build custom software for schools, businesses, and organisations in Kenya.
+              We build custom software for schools, businesses, and organisations.
               Tell us what you need.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">

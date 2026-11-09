@@ -25,19 +25,19 @@ const routes: {
   { path: "/blog",                changeFrequency: "weekly",  priority: 0.7 },
   // Blog articles
   {
-    path: "/blog/how-to-choose-website-development-company-kenya",
+    path: "/blog/how-to-choose-website-development-company",
     changeFrequency: "monthly",
     priority: 0.6,
     lastModified: new Date("2024-11-01"),
   },
   {
-    path: "/blog/ai-automation-small-businesses-kenya",
+    path: "/blog/ai-automation-small-businesses",
     changeFrequency: "monthly",
     priority: 0.6,
     lastModified: new Date("2024-11-15"),
   },
   {
-    path: "/blog/custom-software-vs-off-the-shelf-kenya",
+    path: "/blog/custom-software-vs-off-the-shelf",
     changeFrequency: "monthly",
     priority: 0.6,
     lastModified: new Date("2024-12-01"),

@@ -5,28 +5,28 @@ const BASE_URL = "https://trillionairedesigns.co.ke";
 const PAGE_URL = `${BASE_URL}/app-development`;
 
 export const metadata: Metadata = {
-  title: "Mobile App Development in Kenya — iOS, Android & Web Apps",
+  title: "Mobile App Development — iOS, Android & Web Apps",
   description:
-    "Mobile app development company in Kenya. Trillionaire Designs builds cross-platform iOS and Android apps, web apps, and full-stack backends for businesses in Nairobi and across Kenya.",
+    "Mobile app development company. Trillionaire Designs builds cross-platform iOS and Android apps, web apps, and full-stack backends for businesses of any size.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Mobile App Development in Kenya | Trillionaire Designs",
+    title: "Mobile App Development | Trillionaire Designs",
     description:
-      "Cross-platform mobile apps for iOS and Android, built end to end with backend, store submission, and ongoing support. Nairobi-based team.",
+      "Cross-platform mobile apps for iOS and Android, built end to end with backend, store submission, and ongoing support. team.",
     url: PAGE_URL,
     type: "website",
   },
   keywords: [
-    "mobile app development Kenya",
-    "app development company Nairobi",
-    "iOS app development Kenya",
-    "Android app development Kenya",
-    "cross-platform app development Kenya",
-    "web app development Kenya",
-    "React Native app development Kenya",
-    "app development services Kenya",
+    "mobile app development",
+    "app development company",
+    "iOS app development",
+    "Android app development",
+    "cross-platform app development",
+    "web app development",
+    "React Native app development",
+    "app development services",
   ],
 };
 
@@ -35,20 +35,16 @@ const serviceSchema = {
   "@type": "Service",
   "@id": `${PAGE_URL}/#service`,
   name: "Mobile App Development",
-  alternateName: "App Development Kenya",
+  alternateName: "App Development",
   description:
-    "Mobile and web app development services in Kenya. We build cross-platform iOS, Android, and web applications end to end, including backend, APIs, and app store submission.",
+    "Mobile and web app development services. We build cross-platform iOS, Android, and web applications end to end, including backend, APIs, and app store submission.",
   provider: {
     "@type": "Organization",
     "@id": `${BASE_URL}/#organization`,
     name: "Trillionaire Designs",
   },
   serviceType: "Mobile App Development",
-  areaServed: [
-    { "@type": "Country", name: "Kenya" },
-    { "@type": "AdministrativeArea", name: "Nairobi" },
-  ],
-  url: PAGE_URL,
+    url: PAGE_URL,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "App Development Services",

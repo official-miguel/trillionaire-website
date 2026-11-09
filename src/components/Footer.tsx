@@ -30,7 +30,7 @@ export default function Footer() {
             <span className="font-mono text-sm font-semibold text-lime">{"</>"}</span>
           </Link>
           <p className="mt-4 text-white/50 text-sm max-w-xs">
-            A Nairobi-based studio building websites, apps, custom systems, and AI,
+            A software studio building websites, apps, custom systems, and AI,
             with the same rigor we used to build Bidii.
           </p>
         </div>
@@ -71,13 +71,12 @@ export default function Footer() {
             >
               0182 319 029
             </a>
-            <span>Nairobi, Kenya</span>
           </div>
         </div>
       </div>
 
       <div className="mx-auto max-w-7xl mt-12 pt-6 border-t border-white/10 text-xs text-white/40">
-        <span>© {new Date().getFullYear()} Trillionaire Designs. Built with effort in Kenya.</span>
+        <span>© {new Date().getFullYear()} Trillionaire Designs. Built with effort.</span>
       </div>
     </footer>
   );

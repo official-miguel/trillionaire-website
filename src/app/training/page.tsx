@@ -5,31 +5,31 @@ const BASE_URL = "https://trillionairedesigns.co.ke";
 const PAGE_URL = `${BASE_URL}/training`;
 
 export const metadata: Metadata = {
-  title: "Coding & AI Training in Kenya — Programming Classes & Practical AI Skills",
+  title: "Coding & AI Training — Programming Classes & Practical AI Skills",
   description:
-    "Coding classes and AI training in Kenya by Trillionaire Designs. Hands-on programming and AI courses for individuals, teams, and organisations in Nairobi. Learn from developers who build real software.",
+    "Coding classes and AI training by Trillionaire Designs. Hands-on programming and AI courses for individuals, teams, and organisations. Learn from developers who build real software.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Coding & AI Training in Kenya | Trillionaire Designs",
+    title: "Coding & AI Training | Trillionaire Designs",
     description:
-      "Practical coding and AI training in Nairobi. Hands-on sessions taught by developers who ship real AI products. For beginners, teams, and organisations.",
+      "Practical coding and AI training. Hands-on sessions taught by developers who ship real AI products. For beginners, teams, and organisations.",
     url: PAGE_URL,
     type: "website",
   },
   keywords: [
-    "coding classes Kenya",
-    "programming training Kenya",
-    "AI training Kenya",
-    "coding bootcamp Nairobi",
-    "programming courses Kenya",
-    "web development training Kenya",
-    "AI skills training Kenya",
-    "software development training Nairobi",
-    "beginner coding lessons Kenya",
-    "practical AI training Kenya",
-    "programming mentorship Kenya",
+    "coding classes",
+    "programming training",
+    "AI training",
+    "coding bootcamp",
+    "programming courses",
+    "web development training",
+    "AI skills training",
+    "software development training",
+    "beginner coding lessons",
+    "practical AI training",
+    "programming mentorship",
   ],
 };
 
@@ -38,20 +38,16 @@ const serviceSchema = {
   "@type": "Service",
   "@id": `${PAGE_URL}/#service`,
   name: "Coding and AI Training",
-  alternateName: "Programming Training Kenya",
+  alternateName: "Programming Training",
   description:
-    "Practical coding and AI training in Kenya. Hands-on sessions for individuals and teams taught by software developers who build real AI products in production.",
+    "Practical coding and AI training. Hands-on sessions for individuals and teams taught by software developers who build real AI products in production.",
   provider: {
     "@type": "Organization",
     "@id": `${BASE_URL}/#organization`,
     name: "Trillionaire Designs",
   },
   serviceType: "Education and Training",
-  areaServed: [
-    { "@type": "Country", name: "Kenya" },
-    { "@type": "AdministrativeArea", name: "Nairobi" },
-  ],
-  url: PAGE_URL,
+    url: PAGE_URL,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Training Programmes",
@@ -73,7 +69,7 @@ export default function TrainingPage() {
         eyebrow: "Coding & AI training",
         title: "Practical AI and coding skills for your team.",
         description:
-          "Taught by developers who ship real software, not theory. Hands-on coding and AI training for individuals, organisations, and teams in Kenya who want to actually use these skills.",
+          "Taught by developers who ship real software, not theory. Hands-on coding and AI training for individuals, organisations, and teams who want to actually use these skills.",
         ctaLabel: "Book training",
         ctaHref: "/contact",
         heroImage: "/services/training.png",

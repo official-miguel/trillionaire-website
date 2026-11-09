@@ -7,53 +7,50 @@ import TechStrip from "@/components/TechStrip";
 const BASE_URL = "https://trillionairedesigns.co.ke";
 
 export const metadata: Metadata = {
-  title: "Trillionaire Designs — Kenyan Software Development Company",
+  title: "Trillionaire Designs — Web, App, Systems & AI Development",
   description:
-    "Trillionaire Designs is a Kenyan software development and technology company based in Nairobi. We build websites, mobile apps, custom software systems, and AI solutions for businesses in Kenya and East Africa.",
+    "Trillionaire Designs builds websites, mobile apps, custom software systems, and AI solutions for businesses. Open to clients of every kind.",
   alternates: {
     canonical: BASE_URL,
   },
   openGraph: {
-    title: "Trillionaire Designs — Kenyan Software Development Company",
+    title: "Trillionaire Designs — Web, App, Systems & AI Development",
     description:
-      "Technology and software development company based in Nairobi, Kenya. We build websites, mobile apps, custom software systems, and AI solutions for businesses across Kenya and East Africa.",
+      "software company building websites, apps, custom systems, and AI solutions. See our work — including Bidii, a school management system running in real schools.",
     url: BASE_URL,
     type: "website",
-    images: [
-      {
-        url: "/brand/og-image.svg",
-        width: 1200,
-        height: 630,
-        alt: "Trillionaire Designs — Kenyan Software Development Company",
-      },
-    ],
   },
 };
 
-// Homepage-specific JSON-LD: Connects to main Organization
-const homepageSchema = {
+// Homepage-specific JSON-LD: LocalBusiness (complements Organization in layout)
+const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": `${BASE_URL}/#webpage`,
+  "@type": "ProfessionalService",
+  "@id": `${BASE_URL}/#localbusiness`,
+  name: "Trillionaire Designs",
   url: BASE_URL,
-  name: "Trillionaire Designs — Kenyan Software Development Company",
   description:
-    "Trillionaire Designs is a Kenyan software development and technology company based in Nairobi. We build websites, mobile apps, custom software systems, and AI solutions for businesses in Kenya and East Africa.",
-  isPartOf: {
-    "@id": `${BASE_URL}/#website`,
-  },
-  about: {
-    "@id": `${BASE_URL}/#organization`,
-  },
-  breadcrumb: {
-    "@type": "BreadcrumbList",
+    "Trillionaire Designs is a software company offering web development, mobile app development, custom system development, AI solutions, and coding training for businesses.",
+  priceRange: "$$",
+  telephone: "+254182319029",
+  email: "trillionairedesigns.ke@gmail.com",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "18:00",
+    },
+  ],
+    hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Software Development Services",
     itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: BASE_URL,
-      },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Web Development", url: `${BASE_URL}/web-development` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "App Development", url: `${BASE_URL}/app-development` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Systems Development", url: `${BASE_URL}/systems` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI Development", url: `${BASE_URL}/ai` } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "AI Training", url: `${BASE_URL}/training` } },
     ],
   },
 };
@@ -63,7 +60,7 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <main className="bg-ink text-white">
         {/* Hero */}
@@ -71,13 +68,13 @@ export default function Home() {
           <div className="relative mx-auto max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div className="order-1">
               <h1 className="text-4xl sm:text-6xl lg:text-6xl font-semibold tracking-tight leading-[0.95]">
-                Kenyan software development company building{" "}
-                <span className="text-lime">software that works.</span>
+                We build the software your business{" "}
+                <span className="text-lime">actually runs on.</span>
               </h1>
               <p className="mt-8 text-lg text-white/60 max-w-md">
-                Trillionaire Designs is a technology company based in Nairobi, Kenya. 
-                We build websites, mobile apps, custom software systems, and AI solutions 
-                for businesses across Kenya and East Africa.
+                Websites, apps, custom systems, and AI — built by a dedicated team
+                for businesses of any size. See Bidii, our own school
+                management system, running in real schools today.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link
@@ -98,7 +95,7 @@ export default function Home() {
             <div className="order-2 flex justify-center lg:justify-end">
               <Image
                 src="/brand/logo-laptop.webp"
-                alt="Trillionaire Designs — software development studio in Nairobi, Kenya"
+                alt="Trillionaire Designs — software development studio"
                 width={1680}
                 height={945}
                 priority
@@ -149,10 +146,10 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h3 className="font-semibold text-lg">Kenyan team, global craft</h3>
+                <h3 className="font-semibold text-lg">Big-studio quality, personal service</h3>
                 <p className="mt-2 text-ink/60">
-                  Built in Nairobi, designed to compete with anything you&apos;d find
-                  abroad.
+                  Built and designed to compete with the best you&apos;ll find
+                  anywhere.
                 </p>
               </div>
               <div>

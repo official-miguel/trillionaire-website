@@ -5,28 +5,28 @@ const BASE_URL = "https://trillionairedesigns.co.ke";
 const PAGE_URL = `${BASE_URL}/web-development`;
 
 export const metadata: Metadata = {
-  title: "Website Development in Kenya — Professional Web Design & Development",
+  title: "Website Development — Professional Web Design & Development",
   description:
-    "Professional website development company in Kenya. Trillionaire Designs builds fast, modern, SEO-friendly websites and web platforms for businesses in Nairobi and across Kenya.",
+    "Professional website development company. Trillionaire Designs builds fast, modern, SEO-friendly websites and web platforms for businesses of any size.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Website Development in Kenya | Trillionaire Designs",
+    title: "Website Development | Trillionaire Designs",
     description:
-      "Fast, modern websites built from scratch for Kenyan businesses. No templates — custom design and development by a Nairobi-based team.",
+      "Fast, modern websites built from scratch for growing businesses. No templates — custom design and development by a dedicated team.",
     url: PAGE_URL,
     type: "website",
   },
   keywords: [
-    "website development Kenya",
-    "web development company Nairobi",
-    "professional website design Kenya",
-    "business website development Kenya",
-    "web development services Kenya",
-    "website designers Kenya",
-    "e-commerce website Kenya",
-    "landing page development Kenya",
+    "website development",
+    "web development company",
+    "professional website design",
+    "business website development",
+    "web development services",
+    "website designers",
+    "e-commerce website",
+    "landing page development",
   ],
 };
 
@@ -35,20 +35,16 @@ const serviceSchema = {
   "@type": "Service",
   "@id": `${PAGE_URL}/#service`,
   name: "Website Development",
-  alternateName: "Web Development Kenya",
+  alternateName: "Web Development",
   description:
-    "Professional website development services in Kenya. We design and build fast, conversion-focused marketing sites, landing pages, e-commerce stores, and web platforms using modern technology.",
+    "Professional website development services. We design and build fast, conversion-focused marketing sites, landing pages, e-commerce stores, and web platforms using modern technology.",
   provider: {
     "@type": "Organization",
     "@id": `${BASE_URL}/#organization`,
     name: "Trillionaire Designs",
   },
   serviceType: "Web Development",
-  areaServed: [
-    { "@type": "Country", name: "Kenya" },
-    { "@type": "AdministrativeArea", name: "Nairobi" },
-  ],
-  url: PAGE_URL,
+    url: PAGE_URL,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Website Development Services",
@@ -70,7 +66,7 @@ export default function WebDevelopmentPage() {
         eyebrow: "Web development",
         title: "Websites that load fast and convert.",
         description:
-          "Marketing sites, landing pages, and web platforms built with modern tooling for Kenyan businesses. No bloated templates, no slow builders — custom design and code from scratch.",
+          "Marketing sites, landing pages, and web platforms built with modern tooling for growing businesses. No bloated templates, no slow builders — custom design and code from scratch.",
         ctaLabel: "Start a web project",
         ctaHref: "/contact",
         heroImage: "/services/web-development.png",

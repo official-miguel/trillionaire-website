@@ -5,29 +5,29 @@ const BASE_URL = "https://trillionairedesigns.co.ke";
 const PAGE_URL = `${BASE_URL}/systems`;
 
 export const metadata: Metadata = {
-  title: "Custom Software & System Development in Kenya — Business Management Systems",
+  title: "Custom Software & System Development — Business Management Systems",
   description:
-    "Custom software and business system development company in Kenya. Trillionaire Designs builds school management systems, business management systems, and tailored digital systems for organisations in Nairobi and Kenya.",
+    "Custom software and business system development company. Trillionaire Designs builds school management systems, business management systems, and tailored digital systems for organisations of all kinds.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "Custom System Development in Kenya | Trillionaire Designs",
+    title: "Custom System Development | Trillionaire Designs",
     description:
-      "Bespoke business software and management systems built around how your organisation actually runs. From school systems to business platforms — Nairobi-based development team.",
+      "Bespoke business software and management systems built around how your organisation actually runs. From school systems to business platforms — development team.",
     url: PAGE_URL,
     type: "website",
   },
   keywords: [
-    "custom software development Kenya",
-    "system development company Kenya",
-    "business management system Kenya",
-    "school management system Kenya",
-    "custom business software Nairobi",
-    "ERP development Kenya",
-    "web application development Kenya",
-    "software development company Nairobi",
-    "bespoke software Kenya",
+    "custom software development",
+    "system development company",
+    "business management system",
+    "school management system",
+    "custom business software",
+    "ERP development",
+    "web application development",
+    "software development company",
+    "bespoke software",
   ],
 };
 
@@ -36,20 +36,16 @@ const serviceSchema = {
   "@type": "Service",
   "@id": `${PAGE_URL}/#service`,
   name: "Custom Software and System Development",
-  alternateName: "Business System Development Kenya",
+  alternateName: "Business System Development",
   description:
-    "Custom software and business system development in Kenya. We build school management systems, business management platforms, and enterprise software tailored to how your organisation actually works.",
+    "Custom software and business system development. We build school management systems, business management platforms, and enterprise software tailored to how your organisation actually works.",
   provider: {
     "@type": "Organization",
     "@id": `${BASE_URL}/#organization`,
     name: "Trillionaire Designs",
   },
   serviceType: "Custom Software Development",
-  areaServed: [
-    { "@type": "Country", name: "Kenya" },
-    { "@type": "AdministrativeArea", name: "Nairobi" },
-  ],
-  url: PAGE_URL,
+    url: PAGE_URL,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "System Development Services",
@@ -96,7 +92,7 @@ export default function SystemsPage() {
           label: "Flagship system",
           title: "Bidii is a full school management system.",
           description:
-            "Timetabling, assessments, accommodation, and communication — running in real schools in Kenya today.",
+            "Timetabling, assessments, accommodation, and communication — running in real schools today.",
           href: "/work/bidii",
           linkLabel: "Read the Bidii case study",
         },

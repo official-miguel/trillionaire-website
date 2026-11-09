@@ -2,30 +2,30 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 const BASE_URL = "https://trillionairedesigns.co.ke";
-const SLUG = "ai-automation-small-businesses-kenya";
+const SLUG = "ai-automation-small-businesses";
 const PAGE_URL = `${BASE_URL}/blog/${SLUG}`;
 
 export const metadata: Metadata = {
-  title: "How AI Automation Can Help Small Businesses in Kenya",
+  title: "How AI Automation Can Help Small Businesses",
   description:
-    "Practical ways small and medium businesses in Kenya are using AI to save time, cut costs, and compete with larger companies. Real examples, no hype.",
+    "Practical ways small and medium businesses are using AI to save time, cut costs, and compete with larger companies. Real examples, no hype.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: "How AI Automation Can Help Small Businesses in Kenya | Trillionaire Designs",
+    title: "How AI Automation Can Help Small Businesses | Trillionaire Designs",
     description:
-      "Real, practical AI automation examples for Kenyan SMEs — from customer service chatbots to automated reporting. No hype.",
+      "Real, practical AI automation examples for SMEs — from customer service chatbots to automated reporting. No hype.",
     url: PAGE_URL,
     type: "article",
   },
   keywords: [
-    "AI automation Kenya",
-    "AI for small businesses Kenya",
-    "business automation Kenya",
-    "AI solutions SME Kenya",
-    "chatbot Kenya business",
-    "AI tools for businesses Nairobi",
+    "AI automation",
+    "AI for small businesses",
+    "business automation",
+    "AI solutions SME",
+    "chatbot business",
+    "AI tools for businesses",
   ],
 };
 
@@ -33,9 +33,9 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "@id": `${PAGE_URL}/#article`,
-  headline: "How AI Automation Can Help Small Businesses in Kenya",
+  headline: "How AI Automation Can Help Small Businesses",
   description:
-    "Practical ways small and medium businesses in Kenya are using AI to save time, reduce errors, and compete with larger companies.",
+    "Practical ways small and medium businesses are using AI to save time, reduce errors, and compete with larger companies.",
   url: PAGE_URL,
   datePublished: "2024-11-15",
   dateModified: "2024-11-15",
@@ -45,18 +45,18 @@ const articleSchema = {
     name: "Trillionaire Designs",
   },
   publisher: { "@id": `${BASE_URL}/#organization` },
-  inLanguage: "en-KE",
+  inLanguage: "en",
   about: [
     { "@type": "Thing", name: "Artificial Intelligence" },
     { "@type": "Thing", name: "Business Automation" },
-    { "@type": "Thing", name: "Small Business Kenya" },
+    { "@type": "Thing", name: "Small Business" },
   ],
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: BASE_URL },
       { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE_URL}/blog` },
-      { "@type": "ListItem", position: 3, name: "How AI Automation Can Help Small Businesses in Kenya", item: PAGE_URL },
+      { "@type": "ListItem", position: 3, name: "How AI Automation Can Help Small Businesses", item: PAGE_URL },
     ],
   },
 };
@@ -82,7 +82,7 @@ export default function ArticlePage() {
 
             <span className="font-mono text-sm text-lime">AI</span>
             <h1 className="mt-4 text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
-              How AI Automation Can Help Small Businesses in Kenya
+              How AI Automation Can Help Small Businesses
             </h1>
             <div className="mt-6 flex items-center gap-4 text-sm text-white/40">
               <time dateTime="2024-11-15">15 November 2024</time>
@@ -93,13 +93,13 @@ export default function ArticlePage() {
             </div>
             <p className="mt-8 text-lg text-white/70 leading-relaxed">
               AI isn&apos;t just for large corporations with big tech budgets. Small and
-              medium businesses in Kenya are increasingly using AI tools to handle
+              medium businesses are increasingly using AI tools to handle
               repetitive tasks, respond to customers faster, and make better decisions
               with the data they already have.
             </p>
             <p className="mt-4 text-white/60 leading-relaxed">
-              This article looks at the most practical uses of AI automation for Kenyan
-              SMEs — what&apos;s realistic today, what genuinely saves time, and where to
+              This article looks at the most practical uses of AI automation for small and medium
+              businesses — what&apos;s realistic today, what genuinely saves time, and where to
               start without overspending.
             </p>
 
@@ -120,7 +120,7 @@ export default function ArticlePage() {
             <h2 className="mt-12 text-2xl font-semibold">1. AI customer support and chatbots</h2>
             <p className="mt-4 text-white/60 leading-relaxed">
               The most common use case: an AI assistant that answers frequently asked
-              questions automatically. For a Kenyan business, this might mean a WhatsApp
+              questions automatically. For a business, this might mean a WhatsApp
               bot that answers questions about your hours, services, pricing, and how to
               book — without requiring someone to be available at all hours.
             </p>
@@ -176,7 +176,7 @@ export default function ArticlePage() {
             <div className="mt-16 border-t border-white/10 pt-10">
               <p className="text-white/50 text-sm">
                 Trillionaire Designs builds AI automation and chatbots for businesses
-                in Kenya. We built Soma AI into Bidii — and we can build something
+               . We built Soma AI into Bidii — and we can build something
                 similar for your business.
               </p>
               <Link
@@ -196,7 +196,7 @@ export default function ArticlePage() {
                 <Link href="/work/bidii" className="text-sm text-lime hover:text-white transition-colors">
                   Soma AI in Bidii →
                 </Link>
-                <Link href="/blog/custom-software-vs-off-the-shelf-kenya" className="text-sm text-lime hover:text-white transition-colors">
+                <Link href="/blog/custom-software-vs-off-the-shelf" className="text-sm text-lime hover:text-white transition-colors">
                   Custom Software vs Off-the-Shelf →
                 </Link>
               </div>

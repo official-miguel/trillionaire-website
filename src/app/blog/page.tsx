@@ -5,16 +5,16 @@ const BASE_URL = "https://trillionairedesigns.co.ke";
 const PAGE_URL = `${BASE_URL}/blog`;
 
 export const metadata: Metadata = {
-  title: "Blog — Software, AI & Web Development Insights from Kenya",
+  title: "Blog — Software, AI & Web Development Insights",
   description:
-    "Practical guides, insights, and resources on software development, AI, web development, and tech for businesses in Kenya. Written by the team at Trillionaire Designs.",
+    "Practical guides, insights, and resources on software development, AI, web development, and tech for businesses. Written by the team at Trillionaire Designs.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
     title: "Blog | Trillionaire Designs",
     description:
-      "Software development, AI, and web development insights for Kenyan businesses. Practical guides from the team that built Bidii.",
+      "Software development, AI, and web development insights for businesses. Practical guides from the team that built Bidii.",
     url: PAGE_URL,
     type: "website",
   },
@@ -27,7 +27,7 @@ const blogSchema = {
   url: PAGE_URL,
   name: "Trillionaire Designs Blog",
   description:
-    "Software development, AI, and web development insights for businesses in Kenya.",
+    "Software development, AI, and web development insights for businesses.",
   publisher: { "@id": `${BASE_URL}/#organization` },
   breadcrumb: {
     "@type": "BreadcrumbList",
@@ -41,26 +41,26 @@ const blogSchema = {
 // Published articles — add new entries here as you publish
 export const articles = [
   {
-    slug: "how-to-choose-website-development-company-kenya",
-    title: "How to Choose a Website Development Company in Kenya",
+    slug: "how-to-choose-website-development-company",
+    title: "How to Choose a Website Development Company",
     description:
-      "What to look for, what to avoid, and the right questions to ask before hiring a web development company in Kenya.",
+      "What to look for, what to avoid, and the right questions to ask before hiring a web development company.",
     date: "2024-11-01",
     readTime: "6 min read",
     category: "Web Development",
   },
   {
-    slug: "ai-automation-small-businesses-kenya",
-    title: "How AI Automation Can Help Small Businesses in Kenya",
+    slug: "ai-automation-small-businesses",
+    title: "How AI Automation Can Help Small Businesses",
     description:
-      "Practical ways small and medium businesses in Kenya are using AI to save time, reduce errors, and compete with larger companies.",
+      "Practical ways small and medium businesses are using AI to save time, reduce errors, and compete with larger companies.",
     date: "2024-11-15",
     readTime: "7 min read",
     category: "AI",
   },
   {
-    slug: "custom-software-vs-off-the-shelf-kenya",
-    title: "Custom Software vs Off-the-Shelf: What Makes Sense for Kenyan Businesses?",
+    slug: "custom-software-vs-off-the-shelf",
+    title: "Custom Software vs Off-the-Shelf: What Makes Sense for Your Business?",
     description:
       "A practical comparison of building custom software versus buying ready-made solutions — and how to decide which is right for your business.",
     date: "2024-12-01",
@@ -95,7 +95,7 @@ export default function BlogPage() {
             </h1>
             <p className="mt-6 text-lg text-white/60 max-w-xl">
               Insights on web development, software systems, AI, and technology
-              for businesses in Kenya — written by the team that builds these things daily.
+              for businesses — written by the team that builds these things daily.
             </p>
           </div>
         </section>
@@ -116,7 +116,7 @@ export default function BlogPage() {
                   <p className="mt-3 text-sm text-white/50 leading-relaxed">{article.description}</p>
                   <div className="mt-6 flex items-center gap-3 text-xs text-white/30">
                     <time dateTime={article.date}>
-                      {new Date(article.date).toLocaleDateString("en-KE", {
+                      {new Date(article.date).toLocaleDateString("en", {
                         year: "numeric",
                         month: "long",
                         day: "numeric",

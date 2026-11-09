@@ -5,16 +5,16 @@ const BASE_URL = "https://trillionairedesigns.co.ke";
 const PAGE_URL = `${BASE_URL}/work`;
 
 export const metadata: Metadata = {
-  title: "Our Work — Software Projects by Trillionaire Designs in Kenya",
+  title: "Our Work — Software Projects by Trillionaire Designs",
   description:
-    "See the software Trillionaire Designs has built and shipped. Real products in production, including Bidii — a full school management system running in Kenyan schools today.",
+    "See the software Trillionaire Designs has built and shipped. Real products in production, including Bidii — a full school management system running in schools today.",
   alternates: {
     canonical: PAGE_URL,
   },
   openGraph: {
     title: "Our Work | Trillionaire Designs",
     description:
-      "Real software projects built and shipped by Trillionaire Designs. See Bidii — our school management system running in real schools in Kenya.",
+      "Real software projects built and shipped by Trillionaire Designs. See Bidii — our school management system running in real schools.",
     url: PAGE_URL,
     type: "website",
   },
@@ -26,7 +26,7 @@ const worksSchema = {
   "@id": `${PAGE_URL}/#collectionpage`,
   url: PAGE_URL,
   name: "Work — Software Built by Trillionaire Designs",
-  description: "Portfolio of software products built and shipped by Trillionaire Designs in Kenya.",
+  description: "Portfolio of software products built and shipped by Trillionaire Designs.",
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
@@ -42,7 +42,7 @@ const projects = [
     title: "Bidii",
     tag: "Systems · App · AI",
     description:
-      "A full school management system covering timetabling, assessments, accommodation, and communication — with an embedded AI assistant. Running in real schools in Kenya today.",
+      "A full school management system covering timetabling, assessments, accommodation, and communication — with an embedded AI assistant. Running in real schools today.",
     href: "/work/bidii",
     featured: true,
   },
