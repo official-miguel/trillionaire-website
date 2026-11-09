@@ -56,12 +56,6 @@ const nextConfig: NextConfig = {
         destination: "https://trillionairedesigns.co.ke/:path*",
         permanent: true,
       },
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.trillionairedesigns.co.ke" }],
-        destination: "https://trillionairedesigns.co.ke/:path*",
-        permanent: true,
-      },
       { source: "/blog/how-to-choose-website-development-company-kenya", destination: "/blog/how-to-choose-website-development-company", permanent: true },
       { source: "/blog/ai-automation-small-businesses-kenya", destination: "/blog/ai-automation-small-businesses", permanent: true },
       { source: "/blog/custom-software-vs-off-the-shelf-kenya", destination: "/blog/custom-software-vs-off-the-shelf", permanent: true },
