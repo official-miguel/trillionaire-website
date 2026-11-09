@@ -49,6 +49,19 @@ const nextConfig: NextConfig = {
     return [
       // Redirect /services (no such route) to homepage
       { source: "/services", destination: "/", permanent: false },
+      // One canonical host: send the vercel.app and www duplicates to the main domain
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "trillionaire-website-one.vercel.app" }],
+        destination: "https://trillionairedesigns.co.ke/:path*",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.trillionairedesigns.co.ke" }],
+        destination: "https://trillionairedesigns.co.ke/:path*",
+        permanent: true,
+      },
       { source: "/blog/how-to-choose-website-development-company-kenya", destination: "/blog/how-to-choose-website-development-company", permanent: true },
       { source: "/blog/ai-automation-small-businesses-kenya", destination: "/blog/ai-automation-small-businesses", permanent: true },
       { source: "/blog/custom-software-vs-off-the-shelf-kenya", destination: "/blog/custom-software-vs-off-the-shelf", permanent: true },
